@@ -1,4 +1,3 @@
-
 public class Engine {
 
 	public Engine(Engine engine) {
@@ -53,7 +52,5 @@ public class Engine {
 	public String toString() {
 		return eType+" "+fType+" "+displacement;
 	}
-	
-	
 
 }

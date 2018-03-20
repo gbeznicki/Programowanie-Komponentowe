@@ -12,6 +12,8 @@ public class Main {
 
 		Samochod s3 = new Samochod(s2);
 		
+		s3.setEngine(new Engine(EngineType.V12, FuelType.DIESEL, 1.4));
+		
 		Engine e1 = new Engine(EngineType.R6, FuelType.DIESEL, 2.0);
 		
 		Engine e2 = new Engine(e1);
@@ -52,6 +54,7 @@ public class Main {
 		System.out.println("");
 		
 		Collections.sort(g1.getStored(), new ComparatorEngine());
+		
 
 		for(Samochod i : g1.getStored()) {
 			System.out.println(i.toString());
