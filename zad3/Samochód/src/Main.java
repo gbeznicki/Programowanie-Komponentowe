@@ -1,3 +1,4 @@
+import java.util.Collections;
 
 public class Main {
 
@@ -30,6 +31,32 @@ public class Main {
 			System.out.println("***********************");
 		}
 		
+		System.out.println("");
+		System.out.println("*****************************");
+		System.out.println("SORTOWANIE PO ROKU PRODUKCJI");
+		System.out.println("*****************************");
+		System.out.println("");
+
+			Collections.sort(g1.getStored());
+		
+		for(Samochod i : g1.getStored()) {
+			System.out.println(i.toString());
+			System.out.println("***********************");		
+			}
+		
+		
+		System.out.println("");
+		System.out.println("*****************************");
+		System.out.println("SORTOWANIE PO POJEMNOŒÆI SILNIKA");
+		System.out.println("*****************************");
+		System.out.println("");
+		
+		Collections.sort(g1.getStored(), new ComparatorEngine());
+
+		for(Samochod i : g1.getStored()) {
+			System.out.println(i.toString());
+			System.out.println("***********************");		
+			}
 	}
 
 }

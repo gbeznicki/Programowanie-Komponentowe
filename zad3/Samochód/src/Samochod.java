@@ -56,8 +56,9 @@ public class Samochod implements Comparable<Samochod>{
 		return "Marka: "+make+"\n"+"Model: "+model+"\n"+
 	"Silnik: "+engine+"\n"+"Data Produkcji: "+yearOfProduction;
 	}
-	// metoda z interfejsu Comparable - sprawdz jak j¹ u¿yæ
+
 	@Override
+	//Sortowanie po roku produkcji, rosn¹co
 	public int compareTo(Samochod other) {
 		return Integer.compare(this.yearOfProduction, other.yearOfProduction);
 	}
