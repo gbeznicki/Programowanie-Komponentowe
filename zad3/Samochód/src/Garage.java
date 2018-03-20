@@ -29,4 +29,20 @@ public class Garage {
 		}
 		
 	}
+	
+	//metoda toString()
+	public String toString() {
+		String out = new String();
+		
+		for(Samochod i : stored) {
+			out += "*********************\n";
+			out += "Marka: " + i.getMake()+'\n';
+			out += "Model: " + i.getModel()+'\n';
+			out += "Silnik: "+ i.getEngine()+'\n';
+			out += "Data produkcji: "+ i.getYearOfProduction()+'\n';
+			out += "*********************\n";			
+		}
+		
+		return out;
+	}
 }
